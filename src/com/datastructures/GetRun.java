@@ -26,5 +26,9 @@ public class GetRun {
         linkedList4.insert(30, 2);
         linkedList4.display();
 
+        linkedList2.popFirst();
+        linkedList2.display();
+
+
     }
 }

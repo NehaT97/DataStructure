@@ -1,7 +1,4 @@
 package com.datastructures;
-
-import java.util.Objects;
-
 public class LinkedList {
 
     private Node head;
@@ -19,6 +16,7 @@ public class LinkedList {
         tail = null;
     }
 
+    /*Uc1 :Adding Elements in list*/
     public void add(Integer data) {
         Node newNode = new Node(data, null);
         if (head == null) {
@@ -35,6 +33,7 @@ public class LinkedList {
         count++;
     }
 
+    /*UC4 : Inserting Element in list*/
     public void insert(int data, int i) {
         i = i - 1;
         if (i > count + 1) {
@@ -55,6 +54,16 @@ public class LinkedList {
             count++;
         }
 
+    }
+
+    //UC5 : Delete First Element
+    public int popFirst() {
+        int data = head.data;
+        Node temp = head.next;
+        head.next = null;
+        head = temp;
+        System.out.println("Data Is Removed :" + data);
+        return data;
     }
 
     public void display() {
