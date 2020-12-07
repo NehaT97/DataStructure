@@ -34,8 +34,10 @@ public class TestLinkedList {
         linkedList1.add(56);
         linkedList1.add(30);
         linkedList1.add(70);
-        boolean result = linkedList1.insert(40,3);
+        boolean result = linkedList1.insert(40, 3);
         Assert.assertTrue(result);
         linkedList1.display();
     }
+
+
 }

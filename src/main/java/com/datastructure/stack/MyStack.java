@@ -10,7 +10,12 @@ public class MyStack {
         this.linkedList = new LinkedList();
     }
 
-    public void push(){
-        linkedList.add(20);
+    public void push(int i) {
+        linkedList.add(i);
+
+    }
+
+    public void printStack() {
+        linkedList.display();
     }
 }
