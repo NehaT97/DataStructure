@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.datastructures.linkedlist.TestLinkedList" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-07T14:57:41" hostname="DESKTOP-H3OO9IA" time="0.012">
+<testsuite name="com.datastructures.linkedlist.TestLinkedList" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-07T15:36:59" hostname="DESKTOP-H3OO9IA" time="0.01">
   <properties/>
-  <testcase name="LinkedListOperation_ShouldPassLinkedListOperationTest" classname="com.datastructures.linkedlist.TestLinkedList" time="0.012"/>
+  <testcase name="LinkedListOperation_ShouldPassLinkedList_AddAndSearchOperationTest" classname="com.datastructures.linkedlist.TestLinkedList" time="0.01"/>
   <system-out><![CDATA[Welcome to linked list
  Adding Elements To Linked List
 Uc7 Search Element
