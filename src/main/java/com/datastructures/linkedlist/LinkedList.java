@@ -1,4 +1,5 @@
-package com.datastructures;
+package com.datastructures.linkedlist;
+
 public class LinkedList {
 
     private Node head;
@@ -7,7 +8,6 @@ public class LinkedList {
 
     public LinkedList list() {
         return new LinkedList();
-
     }
 
     public LinkedList() {
@@ -67,24 +67,51 @@ public class LinkedList {
     }
 
     /*UC6:Delete Last Element*/
-    public int pop()
-    {
-        Node temp =head;
-        Node prev =temp;
-        while(temp.next != null)
-        {
-            prev=temp;
-            temp=temp.next;
+    public int pop() {
+        Node temp = head;
+        Node prev = temp;
+        while (temp.next != null) {
+            prev = temp;
+            temp = temp.next;
         }
-        prev.next=null;
+        prev.next = null;
         tail = prev;
-        System.out.println("Data Is Removed :" +temp.data);
+        System.out.println("Data Is Removed :" + temp.data);
         return temp.data;
 
+    }
+
+    /*Uc7:Searching Element In list*/
+    public int search(int ele) {
+        System.out.println("Finding element  : " + ele);
+        int count2 = 1;
+        if (head == null) {
+            return -1;
+        } else if (head.next == null) {
+            return -1;
+        } else if (head.data == ele) {
+            return 0;
+        } else {
+            Node temp = head;
+            display();
+
+            while (temp.next != null) {
+                if (temp.data.compareTo(ele) == 0) {
+                    System.out.println("Element found at position : " + count2);
+                    return count2;
+                }
+                temp = temp.next;
+                count2++;
+            }
+            if (temp.data.compareTo(ele) == 0) {
+                System.out.println("Element found at position : " + count2);
+                return count2;
+            }
+        }
+        return -1;
     }
 
     public void display() {
         System.out.println(head);
     }
-
 }

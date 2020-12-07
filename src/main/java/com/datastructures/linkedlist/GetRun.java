@@ -1,9 +1,10 @@
-package com.datastructures;
+package com.datastructures.linkedlist;
 
 public class GetRun {
+
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
-        System.out.println("\nFirst List");
+        System.out.println("Elements Added");
         linkedList.add(56);
         linkedList.add(70);
         linkedList.add(30);
@@ -37,5 +38,7 @@ public class GetRun {
         System.out.println("\nList 3 pop Result");
         linkedList3.pop();
         linkedList3.display();
+
+        linkedList4.search(56);
     }
 }
