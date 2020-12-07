@@ -66,6 +66,23 @@ public class LinkedList {
         return data;
     }
 
+    /*UC6:Delete Last Element*/
+    public int pop()
+    {
+        Node temp =head;
+        Node prev =temp;
+        while(temp.next != null)
+        {
+            prev=temp;
+            temp=temp.next;
+        }
+        prev.next=null;
+        tail = prev;
+        System.out.println("Data Is Removed :" +temp.data);
+        return temp.data;
+
+    }
+
     public void display() {
         System.out.println(head);
     }
