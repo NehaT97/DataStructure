@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.datastructure.stack.MyStackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-07T18:07:18" hostname="DESKTOP-H3OO9IA" time="0.008">
+<testsuite name="com.datastructure.stack.MyStackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-07T19:47:21" hostname="DESKTOP-H3OO9IA" time="0.015">
   <properties/>
-  <testcase name="givenThreeNumbersAddedToStack_ShouldHaveLastAddedNode" classname="com.datastructure.stack.MyStackTest" time="0.008"/>
-  <system-out><![CDATA[70 >> 30 >> 56 >> null
+  <testcase name="givenThreeNumbersAddedToStack_ShouldHavePerformPeakPopOperation" classname="com.datastructure.stack.MyStackTest" time="0.015"/>
+  <system-out><![CDATA[Welcome To Stack Operation
+70 >> 30 >> 56 >> null
+
+Peak Operation:
+56
+
+Pop Operation
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

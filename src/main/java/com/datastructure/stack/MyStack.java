@@ -18,4 +18,11 @@ public class MyStack {
     public void printStack() {
         linkedList.display();
     }
+
+    public int peak() {
+        return linkedList.peakLastElement();
+    }
+
+    public void pop() {
+    }
 }

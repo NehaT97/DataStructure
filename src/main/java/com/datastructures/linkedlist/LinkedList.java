@@ -5,6 +5,7 @@ public class LinkedList {
     private Node head;
     private Node tail;
     int count;
+    private Node peaknode;
 
     public LinkedList list() {
         return new LinkedList();
@@ -16,6 +17,16 @@ public class LinkedList {
         tail = null;
     }
 
+    public int peakLastElement(){
+       Node temp = head;
+       while (temp.next != null){
+           temp = temp.next;
+       }
+        peaknode = temp;
+        return peaknode.data;
+        //System.out.println("Last Element is: " +peaknode);
+    }
+    
     /*Uc1 :Adding Elements in list*/
     public void add(Integer data) {
         Node newNode = new Node(data, null);
