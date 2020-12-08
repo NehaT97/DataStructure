@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.datastructure.queue.MyQueueTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-08T17:37:38" hostname="DESKTOP-H3OO9IA" time="0.014">
+  <properties/>
+  <testcase name="givenThreeNumbersAddedToQueue_ShouldHavePassCreateQueue" classname="com.datastructure.queue.MyQueueTest" time="0.014"/>
+  <system-out><![CDATA[Welcome To Queue Operation
+56 >> 70 >> 30 >> null
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
