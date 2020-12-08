@@ -15,6 +15,7 @@ public class GetRun {
         linkedList2.add(70);
         linkedList2.add(30);
         linkedList2.add(56);
+        linkedList2.peakLastElement();
         linkedList2.display();
 
         LinkedList linkedList3 = new LinkedList();
@@ -35,10 +36,17 @@ public class GetRun {
         linkedList2.popFirst();
         linkedList2.display();
 
-        System.out.println("\nList 3 pop Result");
-        linkedList3.pop();
-        linkedList3.display();
+        System.out.println("\nList 5 pop Result");
+        LinkedList linkedList5 = new LinkedList();
+        linkedList5.add(10);
+        linkedList5.add(20);
+        linkedList5.add(30);
+        linkedList5.add(40);
+        linkedList5.add(50);
+        linkedList5.Pop();
+        linkedList5.display();
 
-        linkedList4.search(56);
+        // linkedList4.search(56);
+
     }
 }

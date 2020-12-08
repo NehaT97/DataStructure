@@ -23,6 +23,10 @@ public class MyStack {
         return linkedList.peakLastElement();
     }
 
-    public void pop() {
+    public boolean pop() {
+        while (!linkedList.isEmpty()){
+             linkedList.Pop();
+        }
+        return false;
     }
 }

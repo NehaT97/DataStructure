@@ -17,15 +17,25 @@ public class LinkedList {
         tail = null;
     }
 
+    public boolean isEmpty()
+    {
+        if(head==null)
+        {
+            return true;
+        }
+        return false;
+    }
+
     public int peakLastElement(){
        Node temp = head;
        while (temp.next != null){
            temp = temp.next;
        }
         peaknode = temp;
-        return peaknode.data;
         //System.out.println("Last Element is: " +peaknode);
+        return peaknode.data;
     }
+
     
     /*Uc1 :Adding Elements in list*/
     public void add(Integer data) {
@@ -79,7 +89,7 @@ public class LinkedList {
     }
 
     /*UC6:Delete Last Element*/
-    public int pop() {
+    public int Pop() {
         Node temp = head;
         Node prev = temp;
         while (temp.next != null) {
